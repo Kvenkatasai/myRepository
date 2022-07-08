@@ -1,0 +1,41 @@
+
+
+
+<h1 style="text-align: center">{{message}}</h1>
+<h2 style="font-style: italic;color: coral ;text-align:center">Welcome to Revature HBS </h2>
+<h1 style="color: brown;font-style: italic;text-align: center;">Book your Room Here</h1>
+
+<form #f="ngForm" (ngSubmit)="hotelBooking(f.value)" >
+ 
+   <h3  style="color: chocolate; font-style: italic;text-align: center;">Enter your Name:--</h3>
+   <div style="text-align: center"> <input type="text" style="text-align: center"  ngModel name="customerName"><br><br></div>
+  <h3 style="color: darkolivegreen ; font-style: italic;text-align: center;"> Enter  Your MobileNo:--</h3>
+  <div style="text-align: center"><input type="text" style="text-align: center" ngModel name="customerPhone"><br><br></div> 
+  <h3 style="color: darkolivegreen ; font-style: italic;text-align: center;"> Enter  Your AadhaarNo--</h3>
+  <div style="text-align: center"><input type="text" style="text-align: center" ngModel name="customerAadhar"><br><br></div>
+  
+ <h3 style="color: darkolivegreen ; font-style: italic;text-align: center;"> Select Hotel:--</h3>
+<div style="text-align: center">
+      <input style="text-align: center" type="radio" class="custom-control-input" value="RajMahal" name="hotelName" ngModel  required>
+      <label style="text-align: center;color: rgb(13, 18, 61);" class="custom-control-label" for="RajMahal">RajMahal</label>
+ </div>
+ <div style="text-align: center">
+    <input style="text-align: center" type="radio" class="custom-control-input" value="Himalayas" name="hotelName" ngModel required>
+    <label style="text-align: center" class="custom-control-label" for="Novotel">Novotel</label>
+ </div>
+ 
+
+    
+ <h3 style="color: darkolivegreen ; font-style: italic;text-align: center;">  select the date ArrivalDate:--</h3>
+  <div style="text-align: center"><input type="date" style="text-align: center" ngModel name="ArrivalDate"><br><br></div> 
+  <h3 style="color: darkolivegreen ; font-style: italic;text-align: center;"> No of Days :--</h3>
+  <div style="text-align: center"><input type="text" style="text-align: center" ngModel name="bookingDays"><br><br></div> 
+ 
+  <div style="text-align: center"><input type="submit" ></div>
+
+</form>
+
+
+<router-outlet></router-outlet>
+
+

@@ -1,0 +1,13 @@
+<h1  style="color: chocolate; font-style: italic;text-align: center;">{{message}}</h1>
+<h2>Enter the fields to add Hotels</h2>
+<form #f="ngForm" (ngSubmit)="addHotel(f.value)" >
+   <h3 style="color: cadetblue; font-style: italic;text-align: center;">Enter the HotelName:--</h3>
+   <div style="text-align: center"><input  type="text"   ngModel name="hotelName"><br><br></div>
+   <h3 style="color: cadetblue; font-style: italic;text-align: center;">Enter the HotelAddress:--</h3>
+   <div style="text-align: center"> <input type="text" ngModel name="hotelType"><br><br></div>
+   <h3 style="color: cadetblue; font-style: italic;text-align: center;"> Enter the HotelType:--</h3>
+   <div style="text-align: center"> <input type="text" ngModel name="hotelAddress"><br><br></div>
+  
+   <div style="text-align: center"> <input type="submit" ></div>
+</form>
+

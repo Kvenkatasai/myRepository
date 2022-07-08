@@ -1,0 +1,16 @@
+<h1 style="color: cadetblue; font-style: italic;text-align: center;">{{message}}</h1>
+<h2>Welcome to Revature HBS</h2>
+<form #f="ngForm" (ngSubmit)="receptionistRegistration(f.value)" >
+   <h3 style="color: coral; font-style: italic;text-align: center;"> Enter your Name:--</h3>
+  <div style="text-align: center"> <input  type="text"  ngModel name="receptionistName"><br><br></div>
+  <h3  style="color: coral; font-style: italic;text-align: center;">Enter your phone:--</h3>
+  <div style="text-align: center"><input type="number" ngModel name="receptionistPhone"><br><br></div>
+   <h3 style="color: coral; font-style: italic;text-align: center;"> your Email:--</h3>
+   <div style="text-align: center"><input type="text" ngModel name="receptionistEmail"><br><br></div>
+   <h3 style="color: coral; font-style: italic;text-align: center;" >Select Your Password:--</h3>
+   <div style="text-align: center"><input type="text" ngModel name="receptionistPassword"><br><br></div>
+   
+   <div style="text-align: center"><input type="submit" ></div>
+  
+</form>
+<router-outlet></router-outlet>

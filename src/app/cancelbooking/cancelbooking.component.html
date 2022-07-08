@@ -1,0 +1,9 @@
+<h1  style="color: black; font-style: italic;text-align: center;">{{message}}</h1>
+<h2 style="color: rgb(236, 185, 16); font-style: italic;text-align: center;">Booking Cancellation</h2>
+<form #f="ngForm" (ngSubmit)="cancelBooking(f.value)" >
+   <h3 style="color: cadetblue; font-style: italic;text-align: center;">Enter the bookingId:--</h3>
+   <div style="text-align: center"><input  type="text"   ngModel name="bookingId"><br><br></div>
+   
+   <div style="text-align: center"> <input type="submit" ></div>
+</form>
+

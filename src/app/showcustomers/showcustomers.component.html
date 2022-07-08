@@ -1,0 +1,31 @@
+<h2 style="text-align: center font-style=italic;color:cornflowerblue">The customer detailes are</h2>
+<div class="container">
+<div class="container">
+    <div class="row col-mid-6 col-mid-offset-2 custyle">
+    <table class="table table-striped custab" >
+    <thead>
+        <tr>
+            <th>customerId</th>
+            <th>customerAadharNo</th>
+            <th>customerEmail</th>
+            <th>customerName</th>
+            <th>customerPassword</th>
+            <th>customerPhone</th>
+            <th>customerWalletMoney</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let c of cust">
+            <td><span>{{c?.customerEmail}}</span></td>
+            <td>{{c?.customerAadharNo}}</td>
+            <td>{{c?.customerEmail}}</td>
+            <td>{{c?.customerName}}</td>
+            <td>{{c?.customerPassword}}</td>
+            <td>{{c?.customerPhone}}</td>
+            <td>{{c?.customerWalletMoney}}</td>
+        </tr>
+    </tbody>
+    </table>
+    </div>
+</div>
+</div>

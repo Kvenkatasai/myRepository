@@ -1,0 +1,18 @@
+
+
+<h2 *ngIf="condition" style="text-align:center;color: maroon;font-style: italic;">Invalid UserEmail Or Password</h2>
+
+ 
+
+
+<h2 style="font-style: italic;color: coral ;text-align:center">Welcome </h2>
+<h1 style="color: brown;font-style: italic;text-align: center;">Welcome  Admin</h1>
+<form #f="ngForm" (ngSubmit)="adminlogin(f.value)" >
+ 
+   <h3  style="color: chocolate; font-style: italic;text-align: center;">Enter your Email:--</h3>
+   <div style="text-align: center"> <input type="text" style="text-align: center"  ngModel name="adminEmail"><br><br></div>
+  <h3 style="color: darkolivegreen ; font-style: italic;text-align: center;"> Enter  Your Password:--</h3>
+  <div style="text-align: center"><input type="text" style="text-align: center" ngModel name="adminPassword"><br><br></div> 
+  <div style="text-align: center"><input type="submit" ></div>
+</form>
+<router-outlet></router-outlet>

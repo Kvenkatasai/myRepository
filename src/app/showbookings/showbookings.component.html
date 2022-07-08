@@ -1,0 +1,34 @@
+<h2 style="text-align: center font-style=italic;color:teal">The Booking detailes are</h2>
+<div class="container">
+<div class="container">
+    <div class="row col-mid-6 col-mid-offset-2 custyle">
+    <table class="table table-striped custab" >
+    <thead>
+        <tr>
+            <th>bookingId</th>
+            <th>customerName</th>
+            <th>customerPhone</th>
+            <th>customerAadhar</th>
+            <th>hotelName</th>
+            <th>arrivalDate</th>
+            <th>NoOfDays</th>
+            
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let c of bookings">
+            <td><span>{{c?.bookingId}}</span></td>
+            <td><span>{{c?.customerName}}</span></td>
+            <td><span>{{c?.customerPhone}}</span></td>
+            <td><span>{{c?.customerAadhar}}</span></td>
+            <td><span>{{c?.hotelName}}</span></td>
+            <td><span>{{c?.arrivalDate}}</span></td>
+            <td><span>{{c?.NoOfDays}}</span></td>
+           
+        </tr>
+    </tbody>
+    </table>
+    </div>
+</div>
+</div>

@@ -1,0 +1,30 @@
+
+<h2 style="text-align: center font-style=italic;color:cornflowerblue">The Hotels detailes are</h2>
+<div class="container">
+<div class="container">
+    <div class="row col-mid-6 col-mid-offset-2 custyle">
+    <table class="table table-striped custab" >
+    <thead>
+        <tr>
+            <th>hotelId</th>
+            <th>hotelName</th>                                         
+            <th>hotelAddress</th>
+            <th>hotelType</th>
+        
+            
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let h of hotel">
+            <td><span>{{h?.hotelId}}</span></td>
+            <td>{{h?.hotelName}}</td>
+            <td>{{h?.hotelAddress}}</td>
+            <td>{{h?.hotelType}}</td>
+   
+        </tr>
+    </tbody>
+    </table>
+    </div>
+</div>
+</div>
